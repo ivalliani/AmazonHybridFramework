@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17361" started-at="2018-02-04T22:38:06Z" finished-at="2018-02-04T22:38:23Z">
+  <suite name="Default suite" duration-ms="17419" started-at="2018-02-05T01:13:05Z" finished-at="2018-02-05T01:13:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17361" started-at="2018-02-04T22:38:06Z" finished-at="2018-02-04T22:38:23Z">
+    <test name="Default test" duration-ms="17419" started-at="2018-02-05T01:13:05Z" finished-at="2018-02-05T01:13:22Z">
       <class name="testCases.VerifyHomePage">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testCases.VerifyHomePage@d2cc05a]" name="openBrowser" is-config="true" duration-ms="8612" started-at="2018-02-04T16:38:06Z" finished-at="2018-02-04T16:38:15Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testCases.VerifyHomePage@d2cc05a]" name="openBrowser" is-config="true" duration-ms="8374" started-at="2018-02-04T19:13:05Z" finished-at="2018-02-04T19:13:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:testCases.VerifyHomePage@d2cc05a]" name="startTest" duration-ms="7602" started-at="2018-02-04T16:38:15Z" finished-at="2018-02-04T16:38:22Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:testCases.VerifyHomePage@d2cc05a]" name="startTest" duration-ms="7827" started-at="2018-02-04T19:13:13Z" finished-at="2018-02-04T19:13:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.VerifyHomePage@d2cc05a]" name="tearDown" is-config="true" duration-ms="1137" started-at="2018-02-04T16:38:22Z" finished-at="2018-02-04T16:38:23Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.VerifyHomePage@d2cc05a]" name="tearDown" is-config="true" duration-ms="1194" started-at="2018-02-04T19:13:21Z" finished-at="2018-02-04T19:13:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
