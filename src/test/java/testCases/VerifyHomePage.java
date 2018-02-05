@@ -15,6 +15,7 @@ import facotry.BrowserFactory;
 import facotry.DataProviderFactory;
 import junit.framework.Assert;
 import pages.HomePage;
+import utility.Helper;
 
 public class VerifyHomePage {
 	
@@ -43,6 +44,7 @@ public class VerifyHomePage {
 		{
 			logger.log(LogStatus.PASS, "Home Page Title has been Verified");
 			System.out.println("The Home Page title has been verified");
+			
 		}
 		
 		else
@@ -51,19 +53,21 @@ public class VerifyHomePage {
 			System.out.println("The Home Page title has NOT been verified");
 		}
 		
-		
+		logger.log(LogStatus.INFO, logger.addScreenCapture(Helper.captureScreenShots(driver, "Amazon Home Page")));
 		
 		
 		home.checkPrimepage();
 		String primepageTitle = driver.getTitle();
 		System.out.println("The title for Prime Page is "+ primepageTitle);
 		logger.log(LogStatus.INFO, "The title for Prime page: "+primepageTitle);
+		logger.log(LogStatus.INFO, logger.addScreenCapture(Helper.captureScreenShots(driver, "Prime Page")));
 		
 		
 		home.yourAmazonPage();
 		String youramazonpageTitle = driver.getTitle();
 		System.out.println("The title for Your Amazon Page is "+ youramazonpageTitle);
 		logger.log(LogStatus.INFO, "The title for Your Amazon Page is : "+youramazonpageTitle);
+		logger.log(LogStatus.INFO, logger.addScreenCapture(Helper.captureScreenShots(driver, "Your Amazon Page")));
 		
 		
 		driver.navigate().back();
@@ -72,12 +76,14 @@ public class VerifyHomePage {
 		String todaydealsTitle = driver.getTitle();
 		System.out.println("The title for Todays Deals is "+ todaydealsTitle);
 		logger.log(LogStatus.INFO, "The title for Your Todays Deals is : "+todaydealsTitle);
+		logger.log(LogStatus.INFO, logger.addScreenCapture(Helper.captureScreenShots(driver, "Amazon Todays Deals")));
 		
 		
 		home.GiftCards();
 		String giftcardTitle = driver.getTitle();
 		System.out.println("The title for Gift Card Page is "+ giftcardTitle);
 		logger.log(LogStatus.INFO, "The title for Gift Cards Page is : "+giftcardTitle);
+		logger.log(LogStatus.INFO, logger.addScreenCapture(Helper.captureScreenShots(driver, "Amazon Gift Cards")));
 		
 		
 		
