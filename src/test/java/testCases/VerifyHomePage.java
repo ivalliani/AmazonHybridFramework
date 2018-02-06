@@ -1,5 +1,11 @@
 package testCases;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
 import org.apache.commons.collections4.bag.SynchronizedSortedBag;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -13,7 +19,6 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import facotry.BrowserFactory;
 import facotry.DataProviderFactory;
-import junit.framework.Assert;
 import pages.HomePage;
 import utility.Helper;
 
@@ -85,6 +90,25 @@ public class VerifyHomePage {
 		logger.log(LogStatus.INFO, "The title for Gift Cards Page is : "+giftcardTitle);
 		logger.log(LogStatus.INFO, logger.addScreenCapture(Helper.captureScreenShots(driver, "Amazon Gift Cards")));
 		
+		home.RegistryPage();
+		String registryTitle = driver.getTitle();
+		System.out.println("The title for Registry Page is "+ registryTitle);
+		logger.log(LogStatus.INFO, "The title for Registry Page is : "+giftcardTitle);
+		logger.log(LogStatus.INFO, logger.addScreenCapture(Helper.captureScreenShots(driver, "Registry Page")));
+		
+		home.SellPage();
+		String sellTitle = driver.getTitle();
+		System.out.println("The title for Sell Page is "+ sellTitle);
+		logger.log(LogStatus.INFO, "The title for Sell Page is : "+sellTitle);
+		logger.log(LogStatus.INFO, logger.addScreenCapture(Helper.captureScreenShots(driver, "Registry Page")));
+		
+		
+		home.HelpPage();
+		String helpTitle = driver.getTitle();
+		System.out.println("The title for Help Page is "+ helpTitle);
+		logger.log(LogStatus.INFO, "The title for Help Page is : "+helpTitle);
+		logger.log(LogStatus.INFO, logger.addScreenCapture(Helper.captureScreenShots(driver, "Registry Page")));
+		
 		
 		
 		report.endTest(logger);
@@ -95,10 +119,12 @@ public class VerifyHomePage {
 	
 		
 	
-	@AfterTest
+	
+	@AfterMethod
+	
 	public void tearDown()
 	{
-		BrowserFactory.closeBrowser(driver);
+		driver.quit();
 	}
 
 }

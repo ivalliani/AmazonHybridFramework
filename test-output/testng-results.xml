@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19936" started-at="2018-02-05T01:23:42Z" finished-at="2018-02-05T01:24:01Z">
+  <suite name="Default suite" duration-ms="16151" started-at="2018-02-06T01:01:36Z" finished-at="2018-02-06T01:01:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19936" started-at="2018-02-05T01:23:42Z" finished-at="2018-02-05T01:24:01Z">
-      <class name="testCases.VerifyHomePage">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testCases.VerifyHomePage@d2cc05a]" name="openBrowser" is-config="true" duration-ms="8692" started-at="2018-02-04T19:23:42Z" finished-at="2018-02-04T19:23:50Z">
+    <test name="Default test" duration-ms="16151" started-at="2018-02-06T01:01:36Z" finished-at="2018-02-06T01:01:52Z">
+      <class name="testCases.VerifySearchPage">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testCases.VerifySearchPage@2a5ca609]" name="openBrowser" is-config="true" duration-ms="8904" started-at="2018-02-05T19:01:36Z" finished-at="2018-02-05T19:01:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:testCases.VerifyHomePage@d2cc05a]" name="startTest" duration-ms="9484" started-at="2018-02-04T19:23:50Z" finished-at="2018-02-04T19:24:00Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:testCases.VerifySearchPage@2a5ca609]" name="startTest" duration-ms="5808" started-at="2018-02-05T19:01:45Z" finished-at="2018-02-05T19:01:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.VerifyHomePage@d2cc05a]" name="tearDown" is-config="true" duration-ms="1727" started-at="2018-02-04T19:24:00Z" finished-at="2018-02-04T19:24:01Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.VerifySearchPage@2a5ca609]" name="tearDown" is-config="true" duration-ms="1431" started-at="2018-02-05T19:01:51Z" finished-at="2018-02-05T19:01:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.VerifyHomePage -->
+      </class> <!-- testCases.VerifySearchPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
