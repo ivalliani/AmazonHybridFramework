@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [SmokeSuite]">
-  <test name="SmokeTest(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
       <class name="testCases.VerifyHomePage">
         <methods>
           <include name="openBrowser"/>
           <include name="tearDown"/>
+          <include name="startTest"/>
         </methods>
       </class> <!-- testCases.VerifyHomePage -->
-      <class name="testCases.VerifySearchPage">
-        <methods>
-          <include name="startTest"/>
-          <include name="openBrowser"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- testCases.VerifySearchPage -->
     </classes>
-  </test> <!-- SmokeTest(failed) -->
-</suite> <!-- Failed suite [SmokeSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

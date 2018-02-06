@@ -1,13 +1,6 @@
 package testCases;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Test;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -19,12 +12,11 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import facotry.BrowserFactory;
 import facotry.DataProviderFactory;
-import pages.HomePage;
 import pages.SearchPage;
 import utility.Helper;
 
 public class VerifySearchPage {
-	
+
 	WebDriver driver;
 	ExtentReports report;
 	ExtentTest logger;
@@ -34,59 +26,72 @@ public class VerifySearchPage {
 	{
 		driver = BrowserFactory.getBrowser("Chrome");
 		driver.get(DataProviderFactory.getConfig().getApplicationUrl());
-		report = new ExtentReports("./Reports/SearchPage.html");
-		logger = report.startTest("Search Page Validation");
-		
+		report = new ExtentReports("./Reports/searchpage.html");
+		logger = report.startTest("Search Page Report");
 	}
 	
 	@Test
 	public void startTest()
 	{
-		
 		SearchPage search = PageFactory.initElements(driver, SearchPage.class);
-		
-		//search.searchbox("alexa");
-		
-		//search.searchbox("alexa");
-		//search.clicksearchbutton();
-		
-		
-		
 		search.searchbox(DataProviderFactory.getExcel().getData(0, 0, 0));
+		search.clicksearchbutton();
 		
+		String tagname=search.bodytags();
+		if(tagname.contains("alexa"))
+		{
+			logger.log(LogStatus.PASS, "The Body text for Alexa has been confirmed");
+			logger.log(LogStatus.INFO, logger.addScreenCapture(Helper.captureScreenShots(driver, "Alexa")));
+		}
+		
+		else 
+		{
+			logger.log(LogStatus.FAIL, "The Body text for Alexa has NOT been confirmed");
+			System.out.println("The Body text for Alexa has NOT been confirmed");
+		}
+		
+		
+		
+		try {
+			Thread.sleep(3000);
+		} catch (Exception e) {
+			e.getMessage();
+		}
+		
+		search.searchbox(DataProviderFactory.getExcel().getData(0, 0, 1));
 		search.clicksearchbutton();
 		
 		
-		System.out.println("The title for Alexa search page is "+ driver.getTitle());
 		
-		String alexatitle=driver.findElement(By.tagName("body")).getText();
-		if(alexatitle.contains("alexa"))
+		String tagnamelaptop=search.bodytags();
+		if(tagnamelaptop.contains("Laptops"))
 		{
-			System.out.println("The Title for Alexa Search has been Verified");
-			logger.log(LogStatus.PASS, "Alexa Search Title has been Verified");
-			logger.log(LogStatus.INFO, logger.addScreenCapture(Helper.captureScreenShots(driver, "Alexa Search has been verified")));
+			logger.log(LogStatus.PASS, "The Body text for LapTop has been confirmed");
+			logger.log(LogStatus.INFO, logger.addScreenCapture(Helper.captureScreenShots(driver, "LapTop")));
 		}
 		
-		else
+		else 
 		{
-			System.out.println("The Title for Alexa Search has NOT been Verified");
-			logger.log(LogStatus.FAIL, "Alexa Search Title has NOT been Verified");
-			logger.log(LogStatus.INFO, logger.addScreenCapture(Helper.captureScreenShots(driver, "Alexa Search has NoT been verified")));
-		
+			logger.log(LogStatus.FAIL, "The Body text for LapTop has NOT been confirmed");
+			System.out.println("The Body text for LapTop has NOT been confirmed");
 		}
-				
+		
+		
+		try {
+			Thread.sleep(3000);
+		} catch (Exception e) {
+			e.getMessage();
+		}
 		
 		
 		report.endTest(logger);
 		report.flush();
+		
 	}
 	
-	@AfterMethod
-	
-	public void tearDown()
+	@AfterTest
+	public void teardown()
 	{
-		//BrowserFactory.closeBrowser(driver);
-		driver.quit();
+		BrowserFactory.closeBrowser(driver);
 	}
-
 }

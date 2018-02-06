@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16279" started-at="2018-02-06T01:26:13Z" finished-at="2018-02-06T01:26:30Z">
+  <suite name="RegressionSuite" duration-ms="53952" started-at="2018-02-06T22:44:19Z" finished-at="2018-02-06T22:45:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16279" started-at="2018-02-06T01:26:13Z" finished-at="2018-02-06T01:26:30Z">
+    <test name="RegressionTest" duration-ms="53952" started-at="2018-02-06T22:44:19Z" finished-at="2018-02-06T22:45:13Z">
       <class name="testCases.VerifySearchPage">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testCases.VerifySearchPage@2a5ca609]" name="openBrowser" is-config="true" duration-ms="8609" started-at="2018-02-05T19:26:13Z" finished-at="2018-02-05T19:26:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:testCases.VerifySearchPage@2a5ca609]" name="startTest" duration-ms="6112" started-at="2018-02-05T19:26:22Z" finished-at="2018-02-05T19:26:28Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:testCases.VerifySearchPage@29ee9faa]" name="startTest" duration-ms="12418" started-at="2018-02-06T16:44:59Z" finished-at="2018-02-06T16:45:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.VerifySearchPage@2a5ca609]" name="tearDown" is-config="true" duration-ms="1546" started-at="2018-02-05T19:26:28Z" finished-at="2018-02-05T19:26:30Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.VerifySearchPage@29ee9faa]" name="teardown" is-config="true" duration-ms="1049" started-at="2018-02-06T16:45:12Z" finished-at="2018-02-06T16:45:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.VerifySearchPage -->
+      <class name="testCases.VerifyHomePage">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testCases.VerifyHomePage@68be2bc2]" name="openBrowser" is-config="true" duration-ms="9303" started-at="2018-02-06T16:44:19Z" finished-at="2018-02-06T16:44:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testCases.VerifySearchPage@29ee9faa]" name="openBrowser" is-config="true" duration-ms="11422" started-at="2018-02-06T16:44:28Z" finished-at="2018-02-06T16:44:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="startTest()[pri:0, instance:testCases.VerifyHomePage@68be2bc2]" name="startTest" duration-ms="18177" started-at="2018-02-06T16:44:40Z" finished-at="2018-02-06T16:44:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.VerifyHomePage@68be2bc2]" name="tearDown" is-config="true" duration-ms="1563" started-at="2018-02-06T16:44:58Z" finished-at="2018-02-06T16:44:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.VerifySearchPage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testCases.VerifyHomePage -->
+    </test> <!-- RegressionTest -->
+  </suite> <!-- RegressionSuite -->
 </testng-results>
