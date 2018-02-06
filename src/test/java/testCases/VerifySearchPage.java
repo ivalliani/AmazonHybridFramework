@@ -50,11 +50,14 @@ public class VerifySearchPage {
 		//search.searchbox("alexa");
 		//search.clicksearchbutton();
 		
-		System.out.println("The title for search page is"+ driver.getTitle());
+		
 		
 		search.searchbox(DataProviderFactory.getExcel().getData(0, 0, 0));
 		
 		search.clicksearchbutton();
+		
+		
+		System.out.println("The title for Alexa search page is "+ driver.getTitle());
 		
 		String alexatitle=driver.findElement(By.tagName("body")).getText();
 		if(alexatitle.contains("alexa"))
