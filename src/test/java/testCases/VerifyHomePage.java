@@ -32,7 +32,7 @@ public class VerifyHomePage {
 	@BeforeTest
 	public void openBrowser()
 	{
-		driver = BrowserFactory.getBrowser("Chrome");
+		driver = BrowserFactory.getBrowser("Firefox");
 		driver.get(DataProviderFactory.getConfig().getApplicationUrl());
 		report = new ExtentReports("./Reports/AmazonHomePageReport.html");
 		logger = report.startTest("Amazon.Com Report Page");
