@@ -2,24 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26781" started-at="2018-02-07T03:29:45Z" finished-at="2018-02-07T03:30:12Z">
+  <suite name="Default suite" duration-ms="28307" started-at="2018-02-07T03:46:14Z" finished-at="2018-02-07T03:46:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26781" started-at="2018-02-07T03:29:45Z" finished-at="2018-02-07T03:30:12Z">
-      <class name="testCases.VerifySearchPage">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testCases.VerifySearchPage@d2cc05a]" name="openBrowser" is-config="true" duration-ms="8716" started-at="2018-02-06T21:29:45Z" finished-at="2018-02-06T21:29:54Z">
+    <test name="Default test" duration-ms="28307" started-at="2018-02-07T03:46:14Z" finished-at="2018-02-07T03:46:42Z">
+      <class name="testCases.VerifyHomePage">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testCases.VerifyHomePage@5419f379]" name="openBrowser" is-config="true" duration-ms="10608" started-at="2018-02-06T21:46:14Z" finished-at="2018-02-06T21:46:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:testCases.VerifySearchPage@d2cc05a]" name="startTest" duration-ms="16422" started-at="2018-02-06T21:29:54Z" finished-at="2018-02-06T21:30:10Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:testCases.VerifyHomePage@5419f379]" name="startTest" duration-ms="17675" started-at="2018-02-06T21:46:24Z" finished-at="2018-02-06T21:46:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.VerifySearchPage@d2cc05a]" name="teardown" is-config="true" duration-ms="1629" started-at="2018-02-06T21:30:10Z" finished-at="2018-02-06T21:30:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.VerifySearchPage -->
+      </class> <!-- testCases.VerifyHomePage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

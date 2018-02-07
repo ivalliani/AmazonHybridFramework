@@ -114,17 +114,14 @@ public class VerifyHomePage {
 		report.endTest(logger);
 		report.flush();
 		
+		driver.quit();
+		
 		
 	}
 	
 		
 	
 	
-	@AfterMethod
 	
-	public void tearDown()
-	{
-		driver.close();
-	}
 
 }
