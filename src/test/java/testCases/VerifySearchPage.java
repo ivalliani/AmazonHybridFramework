@@ -35,7 +35,7 @@ public class VerifySearchPage {
 	{
 		SearchPage search = PageFactory.initElements(driver, SearchPage.class);
 		search.searchbox(DataProviderFactory.getExcel().getData(0, 0, 0));
-		search.clicksearchbutton();
+		//search.clicksearchbutton();
 		
 		String tagname=search.bodytags();
 		if(tagname.contains("alexa"))
@@ -59,9 +59,13 @@ public class VerifySearchPage {
 		}
 		
 		search.searchbox(DataProviderFactory.getExcel().getData(0, 0, 1));
-		search.clicksearchbutton();
+		//search.clicksearchbutton();
 		
-		
+		try {
+			Thread.sleep(3000);
+		} catch (Exception e) {
+			e.getMessage();
+		}
 		
 		String tagnamelaptop=search.bodytags();
 		if(tagnamelaptop.contains("Laptops"))
