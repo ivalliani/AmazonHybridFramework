@@ -24,7 +24,7 @@ public class VerifySearchPage {
 	@BeforeTest
 	public void openBrowser()
 	{
-		driver = BrowserFactory.getBrowser("Chrome");
+		driver = BrowserFactory.getBrowser("Firefox");
 		driver.get(DataProviderFactory.getConfig().getApplicationUrl());
 		report = new ExtentReports("./Reports/searchpage.html");
 		logger = report.startTest("Search Page Report");

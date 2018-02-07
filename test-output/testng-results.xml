@@ -2,20 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28307" started-at="2018-02-07T03:46:14Z" finished-at="2018-02-07T03:46:42Z">
+  <suite name="Default suite" duration-ms="60093" started-at="2018-02-07T19:34:44Z" finished-at="2018-02-07T19:35:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28307" started-at="2018-02-07T03:46:14Z" finished-at="2018-02-07T03:46:42Z">
-      <class name="testCases.VerifyHomePage">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testCases.VerifyHomePage@5419f379]" name="openBrowser" is-config="true" duration-ms="10608" started-at="2018-02-06T21:46:14Z" finished-at="2018-02-06T21:46:24Z">
+    <test name="Default test" duration-ms="60093" started-at="2018-02-07T19:34:44Z" finished-at="2018-02-07T19:35:44Z">
+      <class name="testCases.VerifySearchPage">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testCases.VerifySearchPage@d2cc05a]" name="openBrowser" is-config="true" duration-ms="16080" started-at="2018-02-07T13:34:44Z" finished-at="2018-02-07T13:35:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:testCases.VerifyHomePage@5419f379]" name="startTest" duration-ms="17675" started-at="2018-02-06T21:46:24Z" finished-at="2018-02-06T21:46:42Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:testCases.VerifySearchPage@d2cc05a]" name="startTest" duration-ms="42767" started-at="2018-02-07T13:35:00Z" finished-at="2018-02-07T13:35:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-      </class> <!-- testCases.VerifyHomePage -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.VerifySearchPage@d2cc05a]" name="teardown" is-config="true" duration-ms="1233" started-at="2018-02-07T13:35:43Z" finished-at="2018-02-07T13:35:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.VerifySearchPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
