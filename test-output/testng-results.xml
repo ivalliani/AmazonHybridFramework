@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="60093" started-at="2018-02-07T19:34:44Z" finished-at="2018-02-07T19:35:44Z">
+  <suite name="SmokeSuite" duration-ms="82397" started-at="2018-02-07T22:32:17Z" finished-at="2018-02-07T22:33:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="60093" started-at="2018-02-07T19:34:44Z" finished-at="2018-02-07T19:35:44Z">
+    <test name="SmokeTest" duration-ms="82397" started-at="2018-02-07T22:32:17Z" finished-at="2018-02-07T22:33:40Z">
       <class name="testCases.VerifySearchPage">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testCases.VerifySearchPage@d2cc05a]" name="openBrowser" is-config="true" duration-ms="16080" started-at="2018-02-07T13:34:44Z" finished-at="2018-02-07T13:35:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:testCases.VerifySearchPage@d2cc05a]" name="startTest" duration-ms="42767" started-at="2018-02-07T13:35:00Z" finished-at="2018-02-07T13:35:43Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:testCases.VerifySearchPage@6767c1fc]" name="startTest" duration-ms="39816" started-at="2018-02-07T16:32:59Z" finished-at="2018-02-07T16:33:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.VerifySearchPage@d2cc05a]" name="teardown" is-config="true" duration-ms="1233" started-at="2018-02-07T13:35:43Z" finished-at="2018-02-07T13:35:44Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.VerifySearchPage@6767c1fc]" name="teardown" is-config="true" duration-ms="1007" started-at="2018-02-07T16:33:39Z" finished-at="2018-02-07T16:33:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.VerifySearchPage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="testCases.VerifyHomePage">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testCases.VerifyHomePage@4f933fd1]" name="openBrowser" is-config="true" duration-ms="8908" started-at="2018-02-07T16:32:17Z" finished-at="2018-02-07T16:32:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testCases.VerifySearchPage@6767c1fc]" name="openBrowser" is-config="true" duration-ms="14800" started-at="2018-02-07T16:32:26Z" finished-at="2018-02-07T16:32:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="startTest()[pri:0, instance:testCases.VerifyHomePage@4f933fd1]" name="startTest" duration-ms="17845" started-at="2018-02-07T16:32:41Z" finished-at="2018-02-07T16:32:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+      </class> <!-- testCases.VerifyHomePage -->
+    </test> <!-- SmokeTest -->
+  </suite> <!-- SmokeSuite -->
 </testng-results>
