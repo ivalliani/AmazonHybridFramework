@@ -76,6 +76,11 @@ public class VerifyHomePage {
 		
 		
 		driver.navigate().back();
+		try {
+			Thread.sleep(3000);
+		} catch (Exception e) {
+			e.getMessage();
+		}
 		
 		home.todaysDeals();
 		String todaydealsTitle = driver.getTitle();
