@@ -32,7 +32,7 @@ public class VerifyHomePage {
 	@BeforeTest
 	public void openBrowser()
 	{
-		driver = BrowserFactory.getBrowser("Firefox");
+		driver = BrowserFactory.getBrowser("Chrome");
 		driver.get(DataProviderFactory.getConfig().getApplicationUrl());
 		report = new ExtentReports("./Reports/AmazonHomePageReport.html");
 		logger = report.startTest("Amazon.Com Report Page");
@@ -75,7 +75,7 @@ public class VerifyHomePage {
 		logger.log(LogStatus.INFO, logger.addScreenCapture(Helper.captureScreenShots(driver, "Your Amazon Page")));
 		
 		
-		driver.navigate().back();
+		/*driver.navigate().back();
 		try {
 			Thread.sleep(3000);
 		} catch (Exception e) {
@@ -113,7 +113,7 @@ public class VerifyHomePage {
 		System.out.println("The title for Help Page is "+ helpTitle);
 		logger.log(LogStatus.INFO, "The title for Help Page is : "+helpTitle);
 		logger.log(LogStatus.INFO, logger.addScreenCapture(Helper.captureScreenShots(driver, "Registry Page")));
-		
+		*/
 		
 		
 		report.endTest(logger);

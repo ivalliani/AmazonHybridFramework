@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="RegressionSuite">
-  <test name="RegressionTest">
+<suite name="EndtoEndSuite">
+  <test name="EndtoEndTest">
     <classes>
       <class name="testCases.VerifyHomePage"/>
+      <class name="testCases.VerifyLogInPage"/>
       <class name="testCases.VerifySearchPage"/>
     </classes>
-  </test> <!-- RegressionTest -->
-</suite> <!-- RegressionSuite -->
+  </test> <!-- EndtoEndTest -->
+</suite> <!-- EndtoEndSuite -->

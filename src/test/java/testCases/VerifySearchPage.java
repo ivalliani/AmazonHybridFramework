@@ -42,6 +42,7 @@ public class VerifySearchPage {
 		{
 			logger.log(LogStatus.PASS, "The Body text for Alexa has been confirmed");
 			logger.log(LogStatus.INFO, logger.addScreenCapture(Helper.captureScreenShots(driver, "Alexa")));
+			System.out.println("Alexa Page title "+ driver.getTitle());
 		}
 		
 		else 
@@ -72,6 +73,7 @@ public class VerifySearchPage {
 		{
 			logger.log(LogStatus.PASS, "The Body text for LapTop has been confirmed");
 			logger.log(LogStatus.INFO, logger.addScreenCapture(Helper.captureScreenShots(driver, "LapTop")));
+			System.out.println("Laptop Page title "+ driver.getTitle());
 		}
 		
 		else 
