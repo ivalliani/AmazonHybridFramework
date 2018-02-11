@@ -2,6 +2,7 @@ package testCases;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -90,14 +91,16 @@ public class VerifySearchPage {
 		}
 		
 		
-		report.endTest(logger);
-		report.flush();
+		
 		
 	}
 	
-	@AfterTest
+	@AfterMethod
 	public void teardown()
 	{
+	
 		BrowserFactory.closeBrowser(driver);
+		report.endTest(logger);
+		report.flush();
 	}
 }

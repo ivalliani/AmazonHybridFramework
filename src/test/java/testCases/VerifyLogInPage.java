@@ -3,6 +3,8 @@ package testCases;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -29,6 +31,7 @@ public class VerifyLogInPage {
 		driver.get(DataProviderFactory.getConfig().getApplicationUrl());
 		report = new ExtentReports("./Reports/loginreports.html");
 		logger = report.startTest("Login Report");
+		logger.log(LogStatus.INFO, logger.addScreenCapture(Helper.captureScreenShots(driver, "Amazon Page")));
 		
 	}
 
@@ -67,6 +70,8 @@ public class VerifyLogInPage {
 		
 		String bodytext = driver.findElement(By.tagName("body")).getText();
 		
+		
+		
 		if (bodytext.contains("Password"))
 		{
 			String username =DataProviderFactory.getExcel().getData(0, 1, 0);
@@ -97,16 +102,23 @@ public class VerifyLogInPage {
 		
 		
 		
-		report.endTest(logger);
-		report.flush();
 		
-		driver.quit();
+		
+		
 	}
 	
-	@AfterTest
-	public void teardown()
+	@AfterMethod
+	public void teardown(ITestResult result)
 	{
-		//BrowserFactory.closeBrowser(driver);
+		if(ITestResult.FAILURE==result.getStatus())
+			logger.log(LogStatus.FAIL, logger.addScreenCapture(Helper.captureScreenShots(driver, "Test has been failed")));
+		
+		report.endTest(logger);
+		report.flush();
+			
+			BrowserFactory.closeBrowser(driver);
+		
+		
 	}
 	
 	

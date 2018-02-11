@@ -71,7 +71,7 @@ public class LoginPage {
 
 	public String pagetag()
 	{
-		pagetags.getText();
+		driver.findElement(By.tagName("body")).getText();
 		return "pass";
 	}
 	
