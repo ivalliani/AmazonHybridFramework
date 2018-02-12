@@ -100,6 +100,10 @@ public class VerifyLogInPage {
 		
 		
 		
+		login.dealslink();
+		System.out.println("The title for 10 dollars and less is "+driver.getTitle());
+		logger.log(LogStatus.INFO, logger.addScreenCapture(Helper.captureScreenShots(driver, "10 Dollars and Less")));
+		
 		
 		
 		

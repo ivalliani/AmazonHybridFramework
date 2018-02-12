@@ -27,6 +27,8 @@ public class LoginPage {
 	
 	@FindBy (tagName="body") WebElement pagetags;
 	
+	@FindBy (partialLinkText="$10 OR LESS") WebElement deals;
+	
 	
 	
 
@@ -73,6 +75,11 @@ public class LoginPage {
 	{
 		driver.findElement(By.tagName("body")).getText();
 		return "pass";
+	}
+	
+	public void dealslink()
+	{
+		deals.click();
 	}
 	
 	
