@@ -29,6 +29,10 @@ public class LoginPage {
 	
 	@FindBy (partialLinkText="$10 OR LESS") WebElement deals;
 	
+	@FindBy (xpath=".//*[@id='bb-s-item-0']/a/div[2]") WebElement cellphone;
+	
+	@FindBy (css="#add-to-cart-button") WebElement addtocart;
+	
 	
 	
 
@@ -80,6 +84,15 @@ public class LoginPage {
 	public void dealslink()
 	{
 		deals.click();
+	}
+	
+	public void cellphone() {
+		cellphone.click();
+	}
+	
+	public void addtocart()
+	{
+		addtocart.click();
 	}
 	
 	

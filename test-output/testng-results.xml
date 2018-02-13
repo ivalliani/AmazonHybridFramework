@@ -2,31 +2,31 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18363" started-at="2018-02-12T00:14:33Z" finished-at="2018-02-12T00:14:51Z">
+  <suite name="Default suite" duration-ms="19643" started-at="2018-02-12T18:51:16Z" finished-at="2018-02-12T18:51:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18363" started-at="2018-02-12T00:14:33Z" finished-at="2018-02-12T00:14:51Z">
-      <class name="testCases.VerifyLogInPage">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testCases.VerifyLogInPage@2a5ca609]" name="openBrowser" is-config="true" duration-ms="9342" started-at="2018-02-11T18:14:33Z" finished-at="2018-02-11T18:14:42Z">
+    <test name="Default test" duration-ms="19643" started-at="2018-02-12T18:51:16Z" finished-at="2018-02-12T18:51:36Z">
+      <class name="testCases.VerifyLoginPage">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testCases.VerifyLoginPage@2a5ca609]" name="openBrowser" is-config="true" duration-ms="10059" started-at="2018-02-12T12:51:16Z" finished-at="2018-02-12T12:51:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:testCases.VerifyLogInPage@2a5ca609]" name="startTest" duration-ms="7397" started-at="2018-02-11T18:14:42Z" finished-at="2018-02-11T18:14:50Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:testCases.VerifyLoginPage@2a5ca609]" name="startTest" duration-ms="7523" started-at="2018-02-12T12:51:26Z" finished-at="2018-02-12T12:51:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:testCases.VerifyLogInPage@2a5ca609]" name="teardown" is-config="true" duration-ms="1604" started-at="2018-02-11T18:14:50Z" finished-at="2018-02-11T18:14:51Z">
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:testCases.VerifyLoginPage@2a5ca609]" name="teardown" is-config="true" duration-ms="2049" started-at="2018-02-12T12:51:34Z" finished-at="2018-02-12T12:51:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=startTest status=SUCCESS method=VerifyLogInPage.startTest()[pri:0, instance:testCases.VerifyLogInPage@2a5ca609] output={null}]]]>
+                <![CDATA[[TestResult name=startTest status=SUCCESS method=VerifyLoginPage.startTest()[pri:0, instance:testCases.VerifyLoginPage@2a5ca609] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testCases.VerifyLogInPage -->
+      </class> <!-- testCases.VerifyLoginPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

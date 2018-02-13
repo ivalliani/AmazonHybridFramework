@@ -25,7 +25,7 @@ public class VerifySearchPage {
 	@BeforeTest
 	public void openBrowser()
 	{
-		driver = BrowserFactory.getBrowser("Firefox");
+		driver = BrowserFactory.getBrowser("Chrome");
 		driver.get(DataProviderFactory.getConfig().getApplicationUrl());
 		report = new ExtentReports("./Reports/searchpage.html");
 		logger = report.startTest("Search Page Report");
@@ -99,7 +99,8 @@ public class VerifySearchPage {
 	public void teardown()
 	{
 	
-		BrowserFactory.closeBrowser(driver);
+		driver.quit();
+		//BrowserFactory.closeBrowser(driver);
 		report.endTest(logger);
 		report.flush();
 	}

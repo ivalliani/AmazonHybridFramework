@@ -10,17 +10,17 @@
       </class> <!-- testCases.VerifyHomePage -->
       <class name="testCases.VerifySearchPage">
         <methods>
-          <include name="startTest"/>
           <include name="openBrowser"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- testCases.VerifySearchPage -->
-      <class name="testCases.VerifyLogInPage">
+      <class name="testCases.VerifyLoginPage">
         <methods>
           <include name="openBrowser"/>
           <include name="teardown"/>
+          <include name="startTest"/>
         </methods>
-      </class> <!-- testCases.VerifyLogInPage -->
+      </class> <!-- testCases.VerifyLoginPage -->
     </classes>
   </test> <!-- EndtoEndTest(failed) -->
 </suite> <!-- Failed suite [EndtoEndSuite] -->

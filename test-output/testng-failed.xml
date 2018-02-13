@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [EndtoEndSuite]">
-  <test name="EndtoEndTest(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="testCases.VerifyHomePage">
+      <class name="testCases.VerifyLoginPage">
         <methods>
           <include name="openBrowser"/>
-        </methods>
-      </class> <!-- testCases.VerifyHomePage -->
-      <class name="testCases.VerifySearchPage">
-        <methods>
+          <include name="teardown"/>
           <include name="startTest"/>
-          <include name="openBrowser"/>
-          <include name="teardown"/>
         </methods>
-      </class> <!-- testCases.VerifySearchPage -->
-      <class name="testCases.VerifyLogInPage">
-        <methods>
-          <include name="openBrowser"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- testCases.VerifyLogInPage -->
+      </class> <!-- testCases.VerifyLoginPage -->
     </classes>
-  </test> <!-- EndtoEndTest(failed) -->
-</suite> <!-- Failed suite [EndtoEndSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
